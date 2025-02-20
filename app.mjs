@@ -1,11 +1,10 @@
 import express from 'express';
 const app = express()
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 5001; // 5001 ya koi aur free port
 
 app.get('/', (req, res) => {
-  res.send('Hello NAUSHEEN!')
+  res.send('Hello NAUSHEEN ok')
 })
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
